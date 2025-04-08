@@ -1,10 +1,23 @@
+/* App.css */
 .app-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  
+  .phone-container {
+    border: 10px solid #333;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+  }
   
   .app-header {
     text-align: center;
@@ -76,4 +89,42 @@
   .footer-icon {
     font-size: 20px;
     color: #333;
+  }
+  
+  /* Camera related styles */
+  .camera-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+  }
+  
+  .camera-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .capture-btn {
+    background-color: #0bbee7;
+    color: white;
+  }
+  
+  .captured-image-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .image-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
   }
