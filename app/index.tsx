@@ -36,6 +36,7 @@ export default function Home() {
       <TouchableOpacity onPress={handleTakePhoto} style={styles.button}>
         <Text style={styles.buttonText}>Take Photo</Text>
       </TouchableOpacity>
+      
     </View>
   );
 }
