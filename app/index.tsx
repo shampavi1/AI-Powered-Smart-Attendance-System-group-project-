@@ -12,7 +12,8 @@ import {
 import * as ImagePicker from 'expo-image-picker';
 
 // Import your local image
-const defaultProfileImage: ImageSourcePropType = require('./assets/images/logo.png');
+const defaultProfileImage = require('../assets/images/logo.png');
+
 
 export default function Home() {
   const [profileImage, setProfileImage] = useState<string | null>(null);
@@ -52,14 +53,12 @@ export default function Home() {
       {/* Header */}
       <Text style={styles.header}>ATTENDANCE</Text>
 
-      {/* Profile or Default Icon */}
-      <TouchableOpacity onPress={pickImage}>
-        <Image
-          source={profileImage ? { uri: profileImage } : defaultProfileImage}
-          style={styles.image}
-        />
-        <Text style={styles.uploadText}>Tap to upload photo</Text>
-      </TouchableOpacity>
+{/* Profile or Default Icon */}
+<Image
+  source={profileImage ? { uri: profileImage } : defaultProfileImage}
+  style={styles.image}
+/>
+
 
       {/* Buttons */}
       <TouchableOpacity onPress={() => console.log('Take Photo')} style={styles.button}>
